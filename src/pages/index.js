@@ -12,8 +12,8 @@ export default function Home() {
 
   useEffect(() => {
     const { origin } = location;
-    setLink(`${origin}/proxy`);
-    setLinkSSE(`${origin}/proxy-sse`);
+//     setLink(`${origin}/proxy`);
+//     setLinkSSE(`${origin}/proxy-sse`);
     const clipboard = new ClipboardJS("#copy");
     clipboard.on("success", notify);
     return () => clipboard.destroy();
@@ -28,7 +28,7 @@ export default function Home() {
     <>
       <Head>
         <title>ChatGPT Proxy</title>
-        <meta name="description" content="ChatGPT Proxy" />
+        <meta name="description" content="ckckck" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -40,7 +40,7 @@ export default function Home() {
               className={styles.titleMask}
               style={copied ? { height: 0 } : {}}
             >
-              ChatGPT Proxy
+//               ChatGPT Proxy
             </h1>
           </div>
         </div>
