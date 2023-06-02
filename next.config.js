@@ -4,8 +4,8 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/:slug*",
-        destination: "http://81.71.130.32:8008/:slug*",
+        source: "/proxy/:slug*",
+        destination: "/api/proxy?path=:slug*",
       },
       {
         source: "/proxy-sse/:slug*",
